@@ -8,13 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* ShopFashionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ShopFashionTests.m */; };
+		00ED2749DECD4EEC9B47BE52 /* KoHo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CABAF8BE3784C14863AB663 /* KoHo-Italic.ttf */; };
+		06B9C39418974C62BDC2127D /* KoHo-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91C8D04DB0464D3FB5A09AF4 /* KoHo-ExtraLightItalic.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-ShopFashion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ShopFashion.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		40BC25E1262C4623872A21CE /* KoHo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33628C50AC8F430689525734 /* KoHo-Medium.ttf */; };
+		4231148214C94D8D904B4DB3 /* KoHo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3B19BED7E4E5DB6CA5198 /* KoHo-BoldItalic.ttf */; };
+		424F3DF5B54146F5B3FBF410 /* KoHo-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269BC26EBCA14F8EB7506D0E /* KoHo-SemiBoldItalic.ttf */; };
+		72A8385E27644BD69A0FAC54 /* KoHo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB035895A4724BADB89E5FE8 /* KoHo-Bold.ttf */; };
+		731C5FAF0F3348A8905439C4 /* KoHo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4F5D26D9D4542939A9AA92A /* KoHo-Light.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-ShopFashion-ShopFashionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ShopFashion-ShopFashionTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		941829EDF0DE4047A0EF4761 /* KoHo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD1ABFA9A465441CBC49F690 /* KoHo-ExtraLight.ttf */; };
+		9444AE8C30FC497F926CD0CC /* KoHo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCDBBD64FC44BC19B0D59F0 /* KoHo-SemiBold.ttf */; };
+		AA05CE2855ED48BAA2709F8D /* KoHo-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82C48929129043888BE6CD67 /* KoHo-MediumItalic.ttf */; };
+		BD1D7D07EFE749618A0E3518 /* KoHo-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0593354A5A34364BE2CB590 /* KoHo-LightItalic.ttf */; };
 		F67A6BF17EDCB2CD9250BFB3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 428159532833BC8D4D1D0CE3 /* PrivacyInfo.xcprivacy */; };
+		FDAB3111EA4746558EE43BAE /* KoHo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 028394954E5548A6AFFD737E /* KoHo-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +43,7 @@
 		00E356EE1AD99517003FC87E /* ShopFashionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopFashionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ShopFashionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopFashionTests.m; sourceTree = "<group>"; };
+		028394954E5548A6AFFD737E /* KoHo-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-Regular.ttf"; path = "../src/assets/fonts/KoHo-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ShopFashion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopFashion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ShopFashion/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = ShopFashion/AppDelegate.mm; sourceTree = "<group>"; };
@@ -39,13 +52,24 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ShopFashion/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ShopFashion/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ShopFashion-ShopFashionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShopFashion-ShopFashionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		269BC26EBCA14F8EB7506D0E /* KoHo-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-SemiBoldItalic.ttf"; path = "../src/assets/fonts/KoHo-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		33628C50AC8F430689525734 /* KoHo-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-Medium.ttf"; path = "../src/assets/fonts/KoHo-Medium.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ShopFashion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopFashion.debug.xcconfig"; path = "Target Support Files/Pods-ShopFashion/Pods-ShopFashion.debug.xcconfig"; sourceTree = "<group>"; };
+		3BA3B19BED7E4E5DB6CA5198 /* KoHo-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-BoldItalic.ttf"; path = "../src/assets/fonts/KoHo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3CABAF8BE3784C14863AB663 /* KoHo-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-Italic.ttf"; path = "../src/assets/fonts/KoHo-Italic.ttf"; sourceTree = "<group>"; };
 		428159532833BC8D4D1D0CE3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = ShopFashion/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ShopFashion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopFashion.release.xcconfig"; path = "Target Support Files/Pods-ShopFashion/Pods-ShopFashion.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-ShopFashion-ShopFashionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopFashion-ShopFashionTests.debug.xcconfig"; path = "Target Support Files/Pods-ShopFashion-ShopFashionTests/Pods-ShopFashion-ShopFashionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ShopFashion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShopFashion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ShopFashion/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82C48929129043888BE6CD67 /* KoHo-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-MediumItalic.ttf"; path = "../src/assets/fonts/KoHo-MediumItalic.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ShopFashion-ShopFashionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopFashion-ShopFashionTests.release.xcconfig"; path = "Target Support Files/Pods-ShopFashion-ShopFashionTests/Pods-ShopFashion-ShopFashionTests.release.xcconfig"; sourceTree = "<group>"; };
+		91C8D04DB0464D3FB5A09AF4 /* KoHo-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-ExtraLightItalic.ttf"; path = "../src/assets/fonts/KoHo-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		A4F5D26D9D4542939A9AA92A /* KoHo-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-Light.ttf"; path = "../src/assets/fonts/KoHo-Light.ttf"; sourceTree = "<group>"; };
+		BD1ABFA9A465441CBC49F690 /* KoHo-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-ExtraLight.ttf"; path = "../src/assets/fonts/KoHo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		C0593354A5A34364BE2CB590 /* KoHo-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-LightItalic.ttf"; path = "../src/assets/fonts/KoHo-LightItalic.ttf"; sourceTree = "<group>"; };
+		CB035895A4724BADB89E5FE8 /* KoHo-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-Bold.ttf"; path = "../src/assets/fonts/KoHo-Bold.ttf"; sourceTree = "<group>"; };
+		CCCDBBD64FC44BC19B0D59F0 /* KoHo-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KoHo-SemiBold.ttf"; path = "../src/assets/fonts/KoHo-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -127,6 +151,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				913790B7DA714D9081C1C497 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -140,6 +165,26 @@
 				00E356EE1AD99517003FC87E /* ShopFashionTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		913790B7DA714D9081C1C497 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB035895A4724BADB89E5FE8 /* KoHo-Bold.ttf */,
+				3BA3B19BED7E4E5DB6CA5198 /* KoHo-BoldItalic.ttf */,
+				BD1ABFA9A465441CBC49F690 /* KoHo-ExtraLight.ttf */,
+				91C8D04DB0464D3FB5A09AF4 /* KoHo-ExtraLightItalic.ttf */,
+				3CABAF8BE3784C14863AB663 /* KoHo-Italic.ttf */,
+				A4F5D26D9D4542939A9AA92A /* KoHo-Light.ttf */,
+				C0593354A5A34364BE2CB590 /* KoHo-LightItalic.ttf */,
+				33628C50AC8F430689525734 /* KoHo-Medium.ttf */,
+				82C48929129043888BE6CD67 /* KoHo-MediumItalic.ttf */,
+				028394954E5548A6AFFD737E /* KoHo-Regular.ttf */,
+				CCCDBBD64FC44BC19B0D59F0 /* KoHo-SemiBold.ttf */,
+				269BC26EBCA14F8EB7506D0E /* KoHo-SemiBoldItalic.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -249,6 +294,18 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				F67A6BF17EDCB2CD9250BFB3 /* PrivacyInfo.xcprivacy in Resources */,
+				72A8385E27644BD69A0FAC54 /* KoHo-Bold.ttf in Resources */,
+				4231148214C94D8D904B4DB3 /* KoHo-BoldItalic.ttf in Resources */,
+				941829EDF0DE4047A0EF4761 /* KoHo-ExtraLight.ttf in Resources */,
+				06B9C39418974C62BDC2127D /* KoHo-ExtraLightItalic.ttf in Resources */,
+				00ED2749DECD4EEC9B47BE52 /* KoHo-Italic.ttf in Resources */,
+				731C5FAF0F3348A8905439C4 /* KoHo-Light.ttf in Resources */,
+				BD1D7D07EFE749618A0E3518 /* KoHo-LightItalic.ttf in Resources */,
+				40BC25E1262C4623872A21CE /* KoHo-Medium.ttf in Resources */,
+				AA05CE2855ED48BAA2709F8D /* KoHo-MediumItalic.ttf in Resources */,
+				FDAB3111EA4746558EE43BAE /* KoHo-Regular.ttf in Resources */,
+				9444AE8C30FC497F926CD0CC /* KoHo-SemiBold.ttf in Resources */,
+				424F3DF5B54146F5B3FBF410 /* KoHo-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

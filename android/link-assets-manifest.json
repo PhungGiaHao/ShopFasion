@@ -1,0 +1,53 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/KoHo-Bold.ttf",
+      "sha1": "fc2b7eb0867240560e95f8e6e995ffcf867ee02a"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-BoldItalic.ttf",
+      "sha1": "c357700d4c1a0e7b7097dbe8c6e77958c84e1e48"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-ExtraLight.ttf",
+      "sha1": "c3b556c13fbe410d98e139a40bfa3e34f2ed9c0b"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-ExtraLightItalic.ttf",
+      "sha1": "d7a9f9f69e831f3f1d0c55914da53234bbee30e0"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-Italic.ttf",
+      "sha1": "ffa36cb8e73f57c1392b1a123bb1a9c3f484897b"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-Light.ttf",
+      "sha1": "5a8a227476ea2a25d2158c17d8d985e89040b71c"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-LightItalic.ttf",
+      "sha1": "4c16f6dcfafbf3d47b52ed9febdd9c8aef5a2ddc"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-Medium.ttf",
+      "sha1": "e4e4ebd47b222e1b2adffa55ba92b7580493ef0f"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-MediumItalic.ttf",
+      "sha1": "51a5cf29a4c65f63e3bc7ef44fac3eb1c2410e95"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-Regular.ttf",
+      "sha1": "813eea3d7938a52b0cffc6c2c0b9e10a8c78c412"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-SemiBold.ttf",
+      "sha1": "5e2973b61a527fe42e01c4be92491faaa4f4b9a2"
+    },
+    {
+      "path": "src/assets/fonts/KoHo-SemiBoldItalic.ttf",
+      "sha1": "a44ba849d0a95636b999dd93a3932a97dbe98076"
+    }
+  ]
+}
