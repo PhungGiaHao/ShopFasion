@@ -10,11 +10,11 @@ export default function ListSearch() {
   const renderItem = ({item, index}: {item: IProduct; index: number}) => {
     return <CustomProductItem item={item} index={index} />;
   };
-  const {items, fetchItems, handleItemToFavorites, isItemFavorite} = useItem();
+  const {itemSearch} = useItem();
 
   return (
     <FlatList
-      data={items}
+      data={itemSearch}
       renderItem={renderItem}
       numColumns={2}
       keyExtractor={item => item.id.toString()}

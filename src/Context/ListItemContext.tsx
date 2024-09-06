@@ -1,6 +1,6 @@
-import React, { createContext, useContext, useState } from 'react';
-import { IProduct, IProductList } from '../interface/product';
-import { productApi } from '../Api/productApi';
+import React, {createContext, useContext, useState} from 'react';
+import {IProduct, IProductList} from '../interface/product';
+import {productApi} from '../Api/productApi';
 
 // Define the context type
 type ItemContextType = {
@@ -11,18 +11,22 @@ type ItemContextType = {
   fetchItems: () => Promise<void>;
   fetchItemsByCategory: (category: string) => Promise<void>;
   isItemFavorite: (itemId: number) => boolean;
+  fakeSearchItem: () => Promise<void>;
+  searchItem: (search: string) => void;
+  itemSearch: IProduct[];
+  setItemSearch: React.Dispatch<React.SetStateAction<IProduct[]>>;
 };
 
 // Create the context
 const ItemContext = createContext<ItemContextType | undefined>(undefined);
 
 // Create the provider
-export const ItemProvider: React.FC<{ children: React.ReactNode }> = ({
+export const ItemProvider: React.FC<{children: React.ReactNode}> = ({
   children,
 }) => {
   const [items, setItems] = useState<IProduct[]>([]);
   const [itemFavorite, setItemFavorite] = useState<IProduct[]>([]);
-
+  const [itemSearch, setItemSearch] = useState<IProduct[]>([]);
   const fetchItems = async () => {
     try {
       const response: IProductList = await productApi.getAll();
@@ -42,17 +46,32 @@ export const ItemProvider: React.FC<{ children: React.ReactNode }> = ({
   };
 
   const handleItemToFavorites = (item: IProduct) => {
-    const isFavorite = itemFavorite.some((favorite) => favorite.id === item.id);
+    const isFavorite = itemFavorite.some(favorite => favorite.id === item.id);
     if (isFavorite) {
-      setItemFavorite(itemFavorite.filter((favorite) => favorite.id !== item.id));
+      setItemFavorite(itemFavorite.filter(favorite => favorite.id !== item.id));
     } else {
       setItemFavorite([...itemFavorite, item]);
     }
   };
- 
 
   const isItemFavorite = (itemId: number) => {
-    return itemFavorite.some((item) => item.id === itemId);
+    return itemFavorite.some(item => item.id === itemId);
+  };
+  //fake search item
+  const fectchSearchItem = async () => {
+    try {
+      const response: IProductList = await productApi.getAll();
+      setItemSearch(response);
+    } catch (error) {
+      console.log('Failed to fetch items: ', error);
+    }
+  };
+
+  const searchItem = (search: string) => {
+    const searchItem = itemSearch.filter(item =>
+      item.title.toLowerCase().includes(search.toLowerCase()),
+    );
+    setItems(searchItem);
   };
 
   return (
@@ -65,8 +84,11 @@ export const ItemProvider: React.FC<{ children: React.ReactNode }> = ({
         fetchItems,
         fetchItemsByCategory,
         isItemFavorite,
-      }}
-    >
+        fakeSearchItem: fectchSearchItem,
+        searchItem,
+        itemSearch,
+        setItemSearch,
+      }}>
       {children}
     </ItemContext.Provider>
   );

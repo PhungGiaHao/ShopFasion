@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React, {useEffect} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import {scale} from 'react-native-size-matters';
+import {s, scale} from 'react-native-size-matters';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import CustomText from '../../components/CustomText';
 import {COLORS} from '../../theme/theme';
@@ -18,6 +18,7 @@ export default function SearchScreen() {
     control,
     handleSubmit,
     setValue,
+
     formState: {errors},
   } = useForm<FormValues>({
     defaultValues: {
@@ -30,10 +31,17 @@ export default function SearchScreen() {
     control,
     name: 'search',
   });
-  const {fetchItems} = useItem();
+  const {fakeSearchItem, searchItem, setItemSearch} = useItem();
   useEffect(() => {
-    fetchItems();
+    fakeSearchItem();
   }, []);
+  useEffect(() => {
+    if (search) {
+      searchItem(search);
+    } else {
+      setItemSearch([]);
+    }
+  }, [search]);
   return (
     <SafeAreaView style={styles.container}>
       <Header

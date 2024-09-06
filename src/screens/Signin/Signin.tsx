@@ -14,6 +14,7 @@ import CustomTextInput from '../../components/CustomInput';
 import CustomText from '../../components/CustomText';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {storage} from '../../storage/Storage';
 type FormValues = {
   email: string;
   password: string;
@@ -39,6 +40,7 @@ export default function Signin() {
         index: 0,
         routes: [{name: 'MainTab'}],
       });
+      storage.set('isLogin', 'true');
     }
   };
   return (
@@ -84,7 +86,6 @@ export default function Signin() {
             control={control}
             placeholder="Password"
             secureTextEntry={false}
-          
             onBlur={() => console.log('email field blurred')}
             errorMessage={errors.password?.message}
             rules={{

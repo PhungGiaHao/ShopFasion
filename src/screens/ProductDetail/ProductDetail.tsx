@@ -35,12 +35,12 @@ export default function ProducDetail() {
   const route = useRoute<RouteProp<ParamList, 'productDetail'>>();
   const {item} = route.params || {};
 
-  // const images = [item.image, item.image, item.image];
-  const images = [
-    'https://pbx2-pbww-prod-pbww-cdn.getprintbox.com/media/productimage/e925de22-44e0-4276-bb92-0b4101f5f834/Blank%20Jacket_thumb_900x900?mt=1583407059.733',
-    'https://tokyofashion.com/wp-content/uploads/2023/06/2023-06-11-012-002-NK-Harajuku-0771.jpg',
-    'https://pbx2-pbww-prod-pbww-cdn.getprintbox.com/media/productimage/e925de22-44e0-4276-bb92-0b4101f5f834/Blank%20Jacket_thumb_900x900?mt=1583407059.733',
-  ];
+  const images = [item.image, item.image, item.image];
+  // const images = [
+  //   'https://pbx2-pbww-prod-pbww-cdn.getprintbox.com/media/productimage/e925de22-44e0-4276-bb92-0b4101f5f834/Blank%20Jacket_thumb_900x900?mt=1583407059.733',
+  //   'https://tokyofashion.com/wp-content/uploads/2023/06/2023-06-11-012-002-NK-Harajuku-0771.jpg',
+  //   'https://pbx2-pbww-prod-pbww-cdn.getprintbox.com/media/productimage/e925de22-44e0-4276-bb92-0b4101f5f834/Blank%20Jacket_thumb_900x900?mt=1583407059.733',
+  // ];
   const {width, height} = Dimensions.get('window');
   const {handleItemToFavorites, isItemFavorite} = useItem();
   const flatListRef = React.useRef<FlatList>(null);
@@ -188,13 +188,7 @@ export default function ProducDetail() {
             fontSize: scale(FONTSIZE.size_18),
             marginTop: scale(SPACING.space_24),
           }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          {item.description}
         </CustomText>
       </ScrollView>
       <View

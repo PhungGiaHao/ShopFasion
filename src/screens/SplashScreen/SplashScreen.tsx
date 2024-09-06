@@ -4,13 +4,20 @@ import {COLORS} from '../../theme/theme';
 import {scale} from 'react-native-size-matters';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {storage} from '../../storage/Storage';
 
 export default function SplashScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
   useEffect(() => {
-    setTimeout(() => {
+    if (storage.getBoolean('isLogin')) {
+      setTimeout(() => {
+        navigation.replace('MainTab');
+      }, 2000);
+    } else {
+      setTimeout(() => {
         navigation.replace('SignIn');
-    }, 2000);
+      }, 2000);
+    }
     return () => {};
   }, []);
   return (

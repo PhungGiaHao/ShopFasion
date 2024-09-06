@@ -12,16 +12,23 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {COLORS, FONTFAMILY, FONTSIZE, SPACING} from '../../theme/theme';
 import {scale} from 'react-native-size-matters';
 import CustomText from '../../components/CustomText';
-import {NativeStackNavigationProp} from 'react-native-screens/lib/typescript/native-stack/types';
 import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import ActionSheet, {SheetManager} from 'react-native-actions-sheet';
 import {useImagePicker} from '../../hook/UseImagePicker';
+import {storage} from '../../storage/Storage';
 
 export default function UserScreen() {
   const [isEnabled, setIsEnabled] = React.useState(false);
   const navigation = useNavigation<NativeStackNavigationProp<any>>();
   const {avatarUri, showActionSheet, handleActionSheet} = useImagePicker();
-
+  const onLogout = () => {
+    navigation.reset({
+      index: 0,
+      routes: [{name: 'SignIn'}],
+    });
+    storage.delete('isLogin');
+  };
   return (
     <SafeAreaView style={styles.container}>
       <View style={{flex: 1}}>
@@ -68,6 +75,7 @@ export default function UserScreen() {
             />
           </View>
           <TouchableOpacity
+            onPress={() => onLogout()}
             style={[
               styles.box,
               {
