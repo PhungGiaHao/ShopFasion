@@ -94,7 +94,7 @@ export default function ProducDetail() {
                   }}
                 />
                 <TouchableOpacity
-                  // onPress={() => handleItemToFavorites(item)}
+                  onPress={() => handleItemToFavorites(item)}
                   style={{
                     position: 'absolute',
                     top: scale(SPACING.space_12),
